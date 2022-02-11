@@ -42,6 +42,8 @@
                           <li><button class="botao-nissa btn w-100 text-light btn-dark mb-1">Nissa</button></li>
                           <li><button class="botao-radiant btn w-100 text-light btn-dark">Radiant Serra</button></li>
                           <li><button class="botao-judith btn w-100 text-light btn-dark mb-1">Judith</button></li>
+                          <li><button class="botao-liliana btn w-100 text-light btn-dark mb-1">Liliana</button></li>
+                          <li><button class="botao-kaya btn w-100 text-light btn-dark mb-1">Kaya</button></li>
                         </ul>
                     </li>
 
@@ -362,6 +364,8 @@
                 $("#preto").text(preto);
             })
 
+            //ALTERAR TEMA
+
             $(".botao-radiant").on("click", function(){
                 //'hasClass' verifica se uma determinada classe existe em um dado elemento
                 if($("body").hasClass("bg-nissa") === true){
@@ -369,6 +373,14 @@
                     $("body").addClass("bg-radiant-serra");
                 }else if($("body").hasClass("bg-judith") === true){
                     $("body").removeClass("bg-judith");
+                    $("body").addClass("bg-radiant-serra");
+
+                }else if($("body").hasClass("bg-liliana") === true){
+                    $("body").removeClass("bg-liliana");
+                    $("body").addClass("bg-radiant-serra");
+
+                }else if($("body").hasClass("bg-kaya") === true){
+                    $("body").removeClass("bg-kaya");
                     $("body").addClass("bg-radiant-serra");
 
                 }
@@ -383,6 +395,14 @@
                     $("body").removeClass("bg-radiant-serra");
                     $("body").addClass("bg-judith");
 
+                }else if($("body").hasClass("bg-liliana") === true){
+                    $("body").removeClass("bg-liliana");
+                    $("body").addClass("bg-judith");
+
+                }else if($("body").hasClass("bg-kaya") === true){
+                    $("body").removeClass("bg-kaya");
+                    $("body").addClass("bg-judith");
+
                 }
             })
 
@@ -395,8 +415,57 @@
                     $("body").removeClass("bg-judith");
                     $("body").addClass("bg-nissa");
 
+                }else if($("body").hasClass("bg-liliana") === true){
+                    $("body").removeClass("bg-liliana");
+                    $("body").addClass("bg-nissa");
+
+                }else if($("body").hasClass("bg-kaya") === true){
+                    $("body").removeClass("bg-kaya");
+                    $("body").addClass("bg-nissa");
+
                 }
+                
             })  
+
+            $(".botao-liliana").on("click", function(){
+                //'hasClass' verifica se uma determinada classe existe em um dado elemento
+                if($("body").hasClass("bg-radiant-serra") === true){
+                    $("body").removeClass("bg-radiant-serra");
+                    $("body").addClass("bg-liliana");
+                }else if($("body").hasClass("bg-judith") === true){
+                    $("body").removeClass("bg-judith");
+                    $("body").addClass("bg-liliana");
+
+                }else if($("body").hasClass("bg-nissa") === true){
+                    $("body").removeClass("bg-nissa");
+                    $("body").addClass("bg-liliana");
+
+                }else if($("body").hasClass("bg-kaya") === true){
+                    $("body").removeClass("bg-kaya");
+                    $("body").addClass("bg-liliana");
+
+                }
+            })
+
+            $(".botao-kaya").on("click", function(){
+                //'hasClass' verifica se uma determinada classe existe em um dado elemento
+                if($("body").hasClass("bg-radiant-serra") === true){
+                    $("body").removeClass("bg-radiant-serra");
+                    $("body").addClass("bg-kaya");
+                }else if($("body").hasClass("bg-judith") === true){
+                    $("body").removeClass("bg-judith");
+                    $("body").addClass("bg-kaya");
+
+                }else if($("body").hasClass("bg-nissa") === true){
+                    $("body").removeClass("bg-nissa");
+                    $("body").addClass("bg-kaya");
+
+                }else if($("body").hasClass("bg-liliana") === true){
+                    $("body").removeClass("bg-liliana");
+                    $("body").addClass("bg-kaya");
+
+                }
+            })
             
         })
     </script>

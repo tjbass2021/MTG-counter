@@ -34,6 +34,24 @@
   
 }
 
+.bg-liliana{
+    background: #212529;
+    background-image: url(../images/Lilinana-Deaths-Majesty_AKH_1920x1080_Wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+}
+
+.bg-kaya{
+    background: #212529;
+    background-image: url(../images/kaya_1920x1080_wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+}
+
 
 /*-----------------*/
 .box-shadow-meu{
@@ -104,6 +122,24 @@
         background-size: cover;
       
     }
+
+    .bg-liliana{
+        background: #212529;
+        background-image: url(../images/Lilinana-Deaths-Majesty_AKH_Tablet_Wallpaper.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      
+    }
+
+    .bg-kaya{
+        background: #212529;
+        background-image: url(../images/kaya_tablet_wallpaper.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      
+    }
     
 
 }
@@ -132,6 +168,24 @@
     .bg-judith{
         background: #212529;
         background-image: url(../images/Judith-Scourge-Diva_RNA_iPhone.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      
+    }
+
+    .bg-liliana{
+        background: #212529;
+        background-image: url(../images/Lilinana-Deaths-Majesty_AKH_iPhone_Wallpaper.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      
+    }
+
+    .bg-kaya{
+        background: #212529;
+        background-image: url(../images/kaya_iphone_wallpaper.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
