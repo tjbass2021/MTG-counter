@@ -1,0 +1,99 @@
+/*BACKGROUNDS*/
+
+.bg-grey{
+    background-color: grey;
+}
+
+/*BACKGOUNDS WITH IMAGE*/
+
+.bg-nissa{
+    background: black;
+    background-image: url(../images/nissa1920x1080.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+
+/*-----------------*/
+
+.mana{
+    display: flex;
+}
+
+.reload{
+    width:  64px;
+
+}
+
+.reload img{
+    width: 100%;
+    filter: invert(100%);
+}
+
+.tela{
+    height: 500px;
+}
+
+.caixa{
+    margin-top: 70px;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 912px){
+    body{
+        height: 100%;
+    }
+
+    .bg-nissa{
+        background-image: url(../images/nissaTablet.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+    }
+
+    /* .caixa{
+        width: auto;
+        height: 100%;
+    } */
+}
+
+
+
+@media screen and (max-width: 567px){
+    .bg-nissa{
+        background-image: url(../images/nissaMobile.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+    }
+
+    /* .caixa{
+        width: auto;
+        height: 100%;
+    } */
+}
+
+@media screen and (max-width: 414px){
+
+    .mana{
+        display: none;
+    }
+
+    .botao-mana{
+        display: block !important;
+    }
+
+    .caixa{
+        height: 100% !important;
+    }
+
+}
