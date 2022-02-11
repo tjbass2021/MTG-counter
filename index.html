@@ -39,8 +39,9 @@
                             Alterar Tema
                           </button>
                         <ul class="dropdown-menu bg-dark w-25" aria-labelledby="dropdownMenuButton1">
-                          <li><button class="btn w-100 text-light btn-dark mb-1">Dark</button></li>
-                          <li><button class="btn w-100 text-light btn-dark">Light</button></li>
+                          <li><button class="botao-nissa btn w-100 text-light btn-dark mb-1">Nissa</button></li>
+                          <li><button class="botao-radiant btn w-100 text-light btn-dark">Radiant Serra</button></li>
+                          <li><button class="botao-judith btn w-100 text-light btn-dark mb-1">Judith</button></li>
                         </ul>
                     </li>
 
@@ -74,7 +75,7 @@
             </div>
         </div>
 
-        <button class="botao-mana btn btn-dark text-light rounded-pill d-none">MANA COUNTER</button>
+        <button class="botao-mana btn btn-primary text-light rounded-pill d-none mb-1">MANA COUNTER</button>
 
         <div id="mana" class="mana flex-column flex-wrap justify-content-center w-75 h-50 mb-5 bg-black bg-opacity-50 p-3 rounded-pill">
             <h6 class="text-light text-center">Mana Counter</h6>
@@ -181,6 +182,18 @@
                 
                 })
 
+                $(".botao-mana").on("click", function(){
+                if(contador === 0){
+                    $(".mana").fadeIn();
+                    $(".mana").css("visibility", "visible");
+                    contador = 1;
+                }else if(contador === 1){
+                    $(".mana").fadeOut();
+                    $(".mana").css("visibility", "hidden");
+                    contador = 0;
+                }
+            })
+
             })
 
             
@@ -239,19 +252,22 @@
                     $("#telaCommander").text(danoCommander);
                 
                 })
-            })
 
-            $(".botao-mana").on("click", function(){
+                $(".botao-mana").on("click", function(){
                 if(contador === 0){
                     $(".mana").fadeIn();
-                    $(".mana").addClass("d-flex");
+                    $(".mana").css("visibility", "visible");
                     contador = 1;
                 }else if(contador === 1){
                     $(".mana").fadeOut();
-                    $(".mana").removeClass("d-flex");
+                    $(".mana").css("visibility", "hidden");
                     contador = 0;
-                }
+                    }
+                })
             })
+
+
+
 
             // CONTADOR DE MANA
 
@@ -337,6 +353,44 @@
                 $("#branco").text(branco);
                 $("#preto").text(preto);
             })
+
+            $(".botao-radiant").on("click", function(){
+                //'hasClass' verifica se uma determinada classe existe em um dado elemento
+                if($("body div").hasClass("bg-nissa") === true){
+                    $(".caixa").removeClass("bg-nissa");
+                    $(".caixa").addClass("bg-radiant-serra");
+                }else if($("body div").hasClass("bg-judith") === true){
+                    $(".caixa").removeClass("bg-judith");
+                    $(".caixa").addClass("bg-radiant-serra");
+
+                }
+            })
+
+            $(".botao-judith").on("click", function(){
+                //'hasClass' verifica se uma determinada classe existe em um dado elemento
+                if($("body div").hasClass("bg-nissa") === true){
+                    $(".caixa").removeClass("bg-nissa");
+                    $(".caixa").addClass("bg-judith");
+                }else if($("body div").hasClass("bg-radiant-serra") === true){
+                    $(".caixa").removeClass("bg-radiant-serra");
+                    $(".caixa").addClass("bg-judith");
+
+                }
+            })
+
+            $(".botao-nissa").on("click", function(){
+                //'hasClass' verifica se uma determinada classe existe em um dado elemento
+                if($("body div").hasClass("bg-radiant-serra") === true){
+                    $(".caixa").removeClass("bg-radiant-serra");
+                    $(".caixa").addClass("bg-nissa");
+                }else if($("body div").hasClass("bg-judith") === true){
+                    $(".caixa").removeClass("bg-judith");
+                    $(".caixa").addClass("bg-nissa");
+
+                }
+            })
+
+
 
 
 
