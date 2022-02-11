@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
-<body class="bg-dark">
+<body class="bg-nissa">
 
     <header>
-        <nav class="navbar navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-dark bg-dark">
             <div class="container-fluid">
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -19,7 +19,7 @@
               <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header bg-dark text-light">
                   <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Configurações</h5>
-                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  <button type="button" class="btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body bg-dark">
                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -54,30 +54,30 @@
 
     
 
-    <div class="caixa d-flex flex-column justify-content-center align-items-center w-100 h-auto pt-5 pb-5 bg-nissa bg-opacity-50 rounded">
+    <div class="caixa d-flex flex-column justify-content-center align-items-center w-100 h-100 pt-5 pb-5 bg-opacity-50 m-0 rounded">
         
-        <div class="botoes d-flex flex-row align-items-center justify-content-center">
-            <button id="reset1" class="reload btn btn-danger me-1"><img class="img-fluid" src="icons/reload.svg" alt="Reset"></button>
-            <button id="#comand" class="comand btn btn-dark reload p-3 d-none"><img src="icons/shield.png" alt=""></button>
-            <p id="telaCommander" class="telaCommander d-none bg-black bg-opacity-50 m-0 text-light text-center d-flex flex-row align-items-center justify-content-center" style="width: 64px; height: 60px;">0</p>
+        <div class="botoes d-flex flex-row align-items-center justify-content-start w-100 ps-2">
+            <button id="reset1" class="box-shadow-meu reload btn btn-danger me-1"><img class="img-fluid" src="icons/reload.svg" alt="Reset"></button>
+            <button id="#comand" class="box-shadow-meu comand btn btn-dark reload p-3 d-none"><img src="icons/shield.png" alt=""></button>
+            <p id="telaCommander" class="box-shadow-meu telaCommander d-none bg-black bg-opacity-50 m-0 text-light text-center d-flex flex-row align-items-center justify-content-center" style="width: 64px; height: 60px;">0</p>
         </div>
        
 
         <div class="d-flex flex-row justify-content-center tela w-auto h-auto mt-5 text-light text-center p-1">
             <div class="botao">
-                <button id="add" class="add btn btn-primary text-light m-1 w-auto h-auto p-1"><p class="display-1">+1</p></button>
-                <button id="addPlus" class="addPlus btn  btn-primary text-light m-1 w-auto h-auto p-1"><p class="display-1">+5</p></button>
+                <button id="add" class="box-shadow-meu add btn btn-primary text-light m-1 w-auto h-auto p-1"><p class="display-1">+1</p></button>
+                <button id="addPlus" class="box-shadow-meu addPlus btn  btn-primary text-light m-1 w-auto h-auto p-1"><p class="display-1">+5</p></button>
             </div>
-            <p id="tela" class="d-flex flex-row align-items-center justify-content-center display-3 m-3 w-auto h-25 p-3 bg-black bg-opacity-50 rounded">--</p>
+            <p id="tela" class="box-shadow-meu d-flex flex-row align-items-center justify-content-center m-3 w-50 h-auto p-3 bg-black bg-opacity-75 fw-bold box rounded text-shadow-green" style="font-size: 400%">--</p>
             <div class="botao">
-                <button id="sub" class="subPlus btn btn-warning text-light m-1 w-auto h-auto ps-3 pe-3"><p class="display-1">-5</p></button>
-                <button id="subPlus" class="sub btn btn-warning text-light m-1 w-auto h-auto ps-3 pe-3"><p class="display-1">-1</p></button>
+                <button id="sub" class="box-shadow-meu subPlus btn btn-warning text-light m-1 w-auto h-auto ps-3 pe-3"><p class="display-1">-5</p></button>
+                <button id="subPlus" class="box-shadow-meu sub btn btn-warning text-light m-1 w-auto h-auto ps-3 pe-3"><p class="display-1">-1</p></button>
             </div>
         </div>
 
-        <button class="botao-mana btn btn-primary text-light rounded-pill d-none mb-1">MANA COUNTER</button>
+        <!-- <button class="botao-mana btn btn-primary text-light rounded-pill d-none mb-1">MANA COUNTER</button> -->
 
-        <div id="mana" class="mana flex-column flex-wrap justify-content-center w-75 h-50 mb-5 bg-black bg-opacity-50 p-3 rounded-pill">
+        <div id="mana" class="mana flex-column flex-wrap justify-content-center align-items-center w-75 h-50 mb-1 bg-black bg-opacity-75 p-3 rounded">
             <h6 class="text-light text-center">Mana Counter</h6>
 
             <div class="d-flex flex-row flex-wrap justify-content-center align-items-center w-100">
@@ -105,20 +105,28 @@
                     <button id="subPreto" class="btn btn-dark text-light w-auto h-auto display-1 rounded display-1">-</button>
                 </div>
 
-                <div  class="reset">
-                    <button id="reset2" class="reload btn btn-danger"><img src="icons/reload.svg" alt="Reset" width="64px !important"></button>
-                </div>
+                
+            </div>
+            <div  class="reset m-2">
+                <button id="reset2" class="reload btn btn-danger"><img src="icons/reload.svg" alt="Reset" width="64px !important"></button>
             </div>
 
         </div>
     </div>
 
+    <footer class="w-100 h-25 text-light text-center p-4 m-0 bg-dark">
+        <h5 class="m-1">Desenvolvido por:</h5>
+        <p class="m-2">Thiago Jonas</p>
+        <a class="text-decoration-none text-light bg-primary p-2 mt-1 rounded" href="https://github.com/tjbass2021">Github: tjbass2021</a>
+    </footer>
+
 
  
 
     <script src="scripts/meuscript.js"></script>
-    <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/jquery-v3.6.0min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+
 
     <script>
         $(document).ready(function(){
@@ -356,46 +364,39 @@
 
             $(".botao-radiant").on("click", function(){
                 //'hasClass' verifica se uma determinada classe existe em um dado elemento
-                if($("body div").hasClass("bg-nissa") === true){
-                    $(".caixa").removeClass("bg-nissa");
-                    $(".caixa").addClass("bg-radiant-serra");
-                }else if($("body div").hasClass("bg-judith") === true){
-                    $(".caixa").removeClass("bg-judith");
-                    $(".caixa").addClass("bg-radiant-serra");
+                if($("body").hasClass("bg-nissa") === true){
+                    $("body").removeClass("bg-nissa");
+                    $("body").addClass("bg-radiant-serra");
+                }else if($("body").hasClass("bg-judith") === true){
+                    $("body").removeClass("bg-judith");
+                    $("body").addClass("bg-radiant-serra");
 
                 }
             })
 
             $(".botao-judith").on("click", function(){
                 //'hasClass' verifica se uma determinada classe existe em um dado elemento
-                if($("body div").hasClass("bg-nissa") === true){
-                    $(".caixa").removeClass("bg-nissa");
-                    $(".caixa").addClass("bg-judith");
-                }else if($("body div").hasClass("bg-radiant-serra") === true){
-                    $(".caixa").removeClass("bg-radiant-serra");
-                    $(".caixa").addClass("bg-judith");
+                if($("body").hasClass("bg-nissa") === true){
+                    $("body").removeClass("bg-nissa");
+                    $("body").addClass("bg-judith");
+                }else if($("body").hasClass("bg-radiant-serra") === true){
+                    $("body").removeClass("bg-radiant-serra");
+                    $("body").addClass("bg-judith");
 
                 }
             })
 
             $(".botao-nissa").on("click", function(){
                 //'hasClass' verifica se uma determinada classe existe em um dado elemento
-                if($("body div").hasClass("bg-radiant-serra") === true){
-                    $(".caixa").removeClass("bg-radiant-serra");
-                    $(".caixa").addClass("bg-nissa");
-                }else if($("body div").hasClass("bg-judith") === true){
-                    $(".caixa").removeClass("bg-judith");
-                    $(".caixa").addClass("bg-nissa");
+                if($("body").hasClass("bg-radiant-serra") === true){
+                    $("body").removeClass("bg-radiant-serra");
+                    $("body").addClass("bg-nissa");
+                }else if($("body").hasClass("bg-judith") === true){
+                    $("body").removeClass("bg-judith");
+                    $("body").addClass("bg-nissa");
 
                 }
-            })
-
-
-
-
-
-
-                
+            })  
             
         })
     </script>

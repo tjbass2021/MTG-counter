@@ -7,7 +7,7 @@
 /*BACKGOUNDS WITH IMAGE*/
 
 .bg-nissa{
-    background: black;
+    background: #212529;
     background-image: url(../images/nissa1920x1080.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -17,7 +17,7 @@
 }
 
 .bg-radiant-serra{
-    background: black;
+    background: #212529;
     background-image: url(../images/radiant-serra-archangelcm1920x1080.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -26,7 +26,7 @@
 }
 
 .bg-judith{
-    background: black;
+    background: #212529;
     background-image: url(../images/Judith-Scourge-Diva_RNA_1920x1080_Wallpaper.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -36,6 +36,14 @@
 
 
 /*-----------------*/
+.box-shadow-meu{
+    /* box-shadow: 0px 1px 5px 5px #020202; */
+    box-shadow: 0px 1px 5px 5px rgba(2, 2, 2, 0.48);
+}
+
+.text-shadow-green{
+    text-shadow: 4px 3px 0px rgba(25,135,84,1);
+}
 
 .mana{
     display: flex;
@@ -71,6 +79,7 @@
     }
 
     .bg-nissa{
+        background-color: #212529;
         background-image: url(../images/nissaTablet.jpg);
         background-repeat: no-repeat;
         background-position: center;
@@ -78,16 +87,32 @@
         
     }
 
-    /* .caixa{
-        width: auto;
-        height: 100%;
-    } */
+    .bg-radiant-serra{
+        background: #212529;
+        background-image: url(../images/radiant_serra_archangel_tablet.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      
+    }
+
+    .bg-judith{
+        background: #212529;
+        background-image: url(../images/Judith-Scourge-Diva_RNA_Tablet_Wallpaper.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      
+    }
+    
+
 }
 
 
 
 @media screen and (max-width: 567px){
     .bg-nissa{
+        background-color: #212529;
         background-image: url(../images/nissaMobile.jpg);
         background-repeat: no-repeat;
         background-position: center;
@@ -95,17 +120,28 @@
         
     }
 
-    /* .caixa{
-        width: auto;
-        height: 100%;
-    } */
+    .bg-radiant-serra{
+        background: #212529;
+        background-image: url(../images/radiant-serra-archangelMobile.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      
+    }
+
+    .bg-judith{
+        background: #212529;
+        background-image: url(../images/Judith-Scourge-Diva_RNA_iPhone.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      
+    }
+    
 }
 
-@media screen and (max-width: 414px){
+/* @media screen and (max-width: 414px){
 
-    .mana{
-        visibility: hidden;
-    }
 
     .botao-mana{
         display: block !important;
@@ -115,4 +151,4 @@
         height: 100% !important;
     }
 
-}
+} */
