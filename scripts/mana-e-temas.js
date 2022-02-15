@@ -113,6 +113,7 @@ $(document).ready(function(){
         $("#verde").text(verde);
         $("#branco").text(branco);
         $("#preto").text(preto);
+        $("#incolor").text(incolor);
     })
 
 
