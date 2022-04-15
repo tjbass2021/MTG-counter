@@ -5,6 +5,7 @@
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Counter MTG</title>
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
@@ -56,7 +57,7 @@
 
     
 
-    <div class="caixa d-flex flex-column justify-content-center align-items-center w-100 h-100 pt-5 pb-5 bg-opacity-50 m-0 rounded">
+    <div class="caixa d-flex flex-column align-items-center justify-content-center w-auto h-100 p-5 m-0 rounded">
         
         <div class="botoes d-flex flex-row align-items-center justify-content-start w-100 ps-2">
             <button id="reset1" class="box-shadow-meu reload btn btn-danger me-1"><img class="img-fluid" src="icons/reload.svg" alt="Reset"></button>
@@ -65,15 +66,15 @@
         </div>
        
 
-        <div class="d-flex flex-row justify-content-center tela w-auto h-auto mt-5 text-light text-center p-1">
-            <div class="botao">
-                <button id="add" class="box-shadow-meu add btn btn-primary text-light m-1 w-auto h-auto p-1"><p class="display-1">+1</p></button>
-                <button id="addPlus" class="box-shadow-meu addPlus btn  btn-primary text-light m-1 w-auto h-auto p-1"><p class="display-1">+5</p></button>
+        <div class="d-flex flex-row justify-content-center w-auto h-auto mt-5 text-light text-center p-1" style="margin: auto 30px;">
+            <div class="rounded-pill botao bg-black bg-opacity-75 d-flex flex-column justify-content-center" style="box-sizing: border-box;">
+                <button id="add" class="rounded-pill add btn text-light m-1 h-auto p-3"><p style="font-size: 200%; font-weight: bold;">+1</p></button>
+                <button id="subPlus" class="rounded-pill sub btn text-light m-1 w-auto h-auto p-3"><p style="font-size: 200%; font-weight: bold;">-1</p></button>
             </div>
-            <p id="tela" class="box-shadow-meu d-flex flex-row align-items-center justify-content-center m-3 w-50 h-auto p-3 bg-black bg-opacity-75 fw-bold box rounded text-shadow-green" style="font-size: 400%">--</p>
-            <div class="botao">
-                <button id="sub" class="box-shadow-meu subPlus btn btn-warning text-light m-1 w-auto h-auto ps-3 pe-3"><p class="display-1">-5</p></button>
-                <button id="subPlus" class="box-shadow-meu sub btn btn-warning text-light m-1 w-auto h-auto ps-3 pe-3"><p class="display-1">-1</p></button>
+            <p id="tela" class="box-shadow-meu d-flex flex-row align-items-center justify-content-center m-3 h-auto p-3 bg-black bg-opacity-75 fw-bold box rounded text-shadow-green" style="font-size: 400%; width: 50%;">--</p>
+            <div class="rounded-pill botao d-flex flex-column justify-content-center bg-black bg-opacity-75" style="box-sizing: border-box;">
+                <button id="addPlus" class="rounded-pill addPlus btn text-light m-1 w-auto h-auto p-3"><p style="font-size: 200%; font-weight: bold;">+5</p></button>
+                <button id="sub" class="rounded-pill subPlus btn text-light m-1 w-auto h-auto p-3"><p style="font-size: 200%; font-weight: bold;">-5</p></button>
             </div>
         </div>
 
@@ -83,28 +84,33 @@
             <h6 class="text-light text-center">Mana Counter</h6>
 
             <div class="d-flex flex-row flex-wrap justify-content-center align-items-center w-100">
-                <div  class="azul me-3">
+                <div  class="azul me-3 mb-2">
                     <button id="azul" class="btn btn-primary text-light w-auto h-auto display-1 rounded-circle me-1"><span>0</span></button>
                     <button id="subAzul" class="btn btn-primary text-light w-auto h-auto display-1 rounded display-1">-</button>
                 </div>
-                <div class="vermelho me-3">
+                <div class="vermelho me-3 mb-2">
                     <button id="vermelho" class="btn btn-danger text-light w-auto h-auto display-1 rounded-circle me-1">0</button>
                     <button id="subVermelho" class="btn btn-danger text-light w-auto h-auto display-1 rounded display-1">-</button>
                 </div>
 
-                <div class="verde me-3">
+                <div class="verde me-3 mb-2">
                     <button id="verde" class="btn btn-success text-light w-auto h-auto display-1 rounded-circle me-1">0</button>
                     <button id="subVerde" class="btn btn-success text-light w-auto h-auto display-1 rounded display-1">-</button>
                 </div>
 
-                <div class="branco me-3">
+                <div class="branco me-3 mb-2">
                     <button id="branco" class="btn btn-light text-dark w-auto h-auto display-1 rounded-circle me-1">0</button>
                     <button id="subBranco" class="btn btn-light text-dark w-auto h-auto display-1 rounded display-1">-</button>
                 </div>
 
-                <div class="preto me-3">
+                <div class="preto me-3 mb-2">
                     <button id="preto" class="btn btn-dark text-light w-auto h-auto display-1 rounded-circle me-1">0</button>
                     <button id="subPreto" class="btn btn-dark text-light w-auto h-auto display-1 rounded display-1">-</button>
+                </div>
+
+                <div class="incolor me-3 mb-2">
+                    <button id="incolor" class="btn btn-outline-secondary text-light w-auto h-auto display-1 rounded-circle me-1">0</button>
+                    <button id="subIncolor" class="btn btn-outline-secondary text-light w-auto h-auto display-1 rounded display-1">-</button>
                 </div>
 
                 
@@ -128,347 +134,8 @@
     <script src="scripts/meuscript.js"></script>
     <script src="scripts/jquery-v3.6.0min.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
-
-
-    <script>
-        $(document).ready(function(){
-
-            //CONTADOR
-
-            let contador = 0;
-
-            //MANA GLOBAL
-
-            let azul = 0;
-            let vermelho = 0;
-            let verde = 0;
-            let branco = 0;
-            let preto = 0;
-
-            //----------
-
-            //CONTADORES DE VIDA
-            let cont = 0
-            let danoCommander = 0;
-            $("#padrao").on("click", function(){
-                $(".command").fadeOut();
-                $(".comand").addClass("d-none");
-                $(".telaCommander").fadeOut();
-                $(".telaCommander").addClass("d-none");
-                $(".comand").removeClass("d-block");
-                $(".telaCommander").removeClass("d-block");
-                cont = 20;
-                $("#tela").text(cont);
-
-                $(".add").on("click", function(){
-                    cont++
-                    $("#tela").text(cont);
-                    
-                })
-                $(".addPlus").on("click", function(){
-                    cont = cont + 5;
-                    $("#tela").text(cont);
-                })
-                $(".sub").on("click", function(){
-                    cont--;
-                    $("#tela").text(cont);
-                    if(cont <=0){
-                        $("#tela").text("You Lose!");
-                        cont = 0;
-                    }
-                })
-                $(".subPlus").on("click", function(){
-                    cont = cont - 5;
-                    $("#tela").text(cont);
-                    if(cont <=0){
-                        $("#tela").text("You Lose!");
-                        cont = 0;
-                    }
-                })
-
-                $("#reset1").on("click", function(){
-                    cont = 20;
-                    $("#tela").text(cont);
-                
-                })
-
-                $(".botao-mana").on("click", function(){
-                if(contador === 0){
-                    $(".mana").fadeIn();
-                    $(".mana").css("visibility", "visible");
-                    contador = 1;
-                }else if(contador === 1){
-                    $(".mana").fadeOut();
-                    $(".mana").css("visibility", "hidden");
-                    contador = 0;
-                }
-            })
-
-            })
-
-            
-            $("#commander").on("click", function(){
-                $(".comand").fadeIn();
-                $(".comand").addClass("d-block");
-                $(".telaCommander").fadeIn();
-                $(".telaCommander").addClass("d-block");
-                $(".comand").removeClass("d-none");
-                $(".telaCommander").removeClass("d-none");
-                cont = 40;
-                $("#tela").text(cont);
-
-                $(".add").on("click", function(){
-                    cont++
-                    $("#tela").text(cont);
-                    
-                })
-                $(".addPlus").on("click", function(){
-                    cont = cont + 5;
-                    $("#tela").text(cont);
-                })
-                $(".sub").on("click", function(){
-                    cont--;
-                    $("#tela").text(cont);
-                    if(cont <=0){
-                        $("#tela").text("You Lose!");
-                        cont = 0;
-                    }
-                })
-                $(".subPlus").on("click", function(){
-                    cont = cont - 5;
-                    $("#tela").text(cont);
-                    if(cont <=0){
-                        $("#tela").text("You Lose!");
-                        cont = 0;
-                    }
-                })
-
-                $(".comand").on("click", function(){
-                    cont--;
-                    danoCommander++
-                    $("#tela").text(cont);
-                    $("#telaCommander").text(danoCommander);
-                    if(danoCommander >= 21){
-                        danoCommander = 21;
-                        $("#tela").text("You Lose!");
-                        $("#telaCommander").text(21);
-                    }
-                })
-
-                $("#reset1").on("click", function(){
-                    cont = 40;
-                    danoCommander = 0;
-                    $("#tela").text(cont);
-                    $("#telaCommander").text(danoCommander);
-                
-                })
-
-                $(".botao-mana").on("click", function(){
-                if(contador === 0){
-                    $(".mana").fadeIn();
-                    $(".mana").css("visibility", "visible");
-                    contador = 1;
-                }else if(contador === 1){
-                    $(".mana").fadeOut();
-                    $(".mana").css("visibility", "hidden");
-                    contador = 0;
-                    }
-                })
-            })
-
-
-
-
-            // CONTADOR DE MANA
-
-            $("#azul").on("click", function(){
-                azul++
-                $(this).text(azul);
-            })
-
-            $("#vermelho").on("click", function(){
-                vermelho++
-                $(this).text(vermelho);
-            })
-
-            $("#verde").on("click", function(){
-                verde++
-                $(this).text(verde);
-            })
-
-            $("#branco").on("click", function(){
-                branco++
-                $(this).text(branco);
-            })
-
-            $("#preto").on("click", function(){
-                preto++
-                $(this).text(preto);
-            })
-
-            $("#subAzul").on("click", function(){
-                azul--
-                $("#azul").text(azul);
-                if(azul < 0){
-                    azul = 0;
-                    $("#azul").text(azul);
-                }
-            })
-
-            $("#subVermelho").on("click", function(){
-                vermelho--
-                $("#vermelho").text(vermelho);
-                if(vermelho < 0){
-                    vermelho = 0;
-                    $("#vermelho").text(vermelho);
-                }
-            })
-
-            $("#subVerde").on("click", function(){
-                verde--
-                $("#verde").text(verde);
-                if(verde < 0){
-                    verde = 0;
-                    $("#verde").text(verde);
-                }
-            })
-
-            $("#subBranco").on("click", function(){
-                branco--
-                $("#branco").text(branco);
-                if(branco < 0){
-                    branco = 0;
-                    $("#branco").text(branco);
-                }
-            })
-
-            $("#subPreto").on("click", function(){
-                preto--
-                $("#preto").text(preto);
-                if(preto < 0){
-                    preto = 0;
-                    $("#preto").text(preto);
-                }
-            })
-
-            $("#reset2").on("click", function(){
-                azul = 0;
-                vermelho = 0;
-                verde = 0;
-                branco = 0;
-                preto = 0;
-                $("#azul").text(azul);
-                $("#vermelho").text(vermelho);
-                $("#verde").text(verde);
-                $("#branco").text(branco);
-                $("#preto").text(preto);
-            })
-
-            //ALTERAR TEMA
-
-            $(".botao-radiant").on("click", function(){
-                //'hasClass' verifica se uma determinada classe existe em um dado elemento
-                if($("body").hasClass("bg-nissa") === true){
-                    $("body").removeClass("bg-nissa");
-                    $("body").addClass("bg-radiant-serra");
-                }else if($("body").hasClass("bg-judith") === true){
-                    $("body").removeClass("bg-judith");
-                    $("body").addClass("bg-radiant-serra");
-
-                }else if($("body").hasClass("bg-liliana") === true){
-                    $("body").removeClass("bg-liliana");
-                    $("body").addClass("bg-radiant-serra");
-
-                }else if($("body").hasClass("bg-kaya") === true){
-                    $("body").removeClass("bg-kaya");
-                    $("body").addClass("bg-radiant-serra");
-
-                }
-            })
-
-            $(".botao-judith").on("click", function(){
-                //'hasClass' verifica se uma determinada classe existe em um dado elemento
-                if($("body").hasClass("bg-nissa") === true){
-                    $("body").removeClass("bg-nissa");
-                    $("body").addClass("bg-judith");
-                }else if($("body").hasClass("bg-radiant-serra") === true){
-                    $("body").removeClass("bg-radiant-serra");
-                    $("body").addClass("bg-judith");
-
-                }else if($("body").hasClass("bg-liliana") === true){
-                    $("body").removeClass("bg-liliana");
-                    $("body").addClass("bg-judith");
-
-                }else if($("body").hasClass("bg-kaya") === true){
-                    $("body").removeClass("bg-kaya");
-                    $("body").addClass("bg-judith");
-
-                }
-            })
-
-            $(".botao-nissa").on("click", function(){
-                //'hasClass' verifica se uma determinada classe existe em um dado elemento
-                if($("body").hasClass("bg-radiant-serra") === true){
-                    $("body").removeClass("bg-radiant-serra");
-                    $("body").addClass("bg-nissa");
-                }else if($("body").hasClass("bg-judith") === true){
-                    $("body").removeClass("bg-judith");
-                    $("body").addClass("bg-nissa");
-
-                }else if($("body").hasClass("bg-liliana") === true){
-                    $("body").removeClass("bg-liliana");
-                    $("body").addClass("bg-nissa");
-
-                }else if($("body").hasClass("bg-kaya") === true){
-                    $("body").removeClass("bg-kaya");
-                    $("body").addClass("bg-nissa");
-
-                }
-                
-            })  
-
-            $(".botao-liliana").on("click", function(){
-                //'hasClass' verifica se uma determinada classe existe em um dado elemento
-                if($("body").hasClass("bg-radiant-serra") === true){
-                    $("body").removeClass("bg-radiant-serra");
-                    $("body").addClass("bg-liliana");
-                }else if($("body").hasClass("bg-judith") === true){
-                    $("body").removeClass("bg-judith");
-                    $("body").addClass("bg-liliana");
-
-                }else if($("body").hasClass("bg-nissa") === true){
-                    $("body").removeClass("bg-nissa");
-                    $("body").addClass("bg-liliana");
-
-                }else if($("body").hasClass("bg-kaya") === true){
-                    $("body").removeClass("bg-kaya");
-                    $("body").addClass("bg-liliana");
-
-                }
-            })
-
-            $(".botao-kaya").on("click", function(){
-                //'hasClass' verifica se uma determinada classe existe em um dado elemento
-                if($("body").hasClass("bg-radiant-serra") === true){
-                    $("body").removeClass("bg-radiant-serra");
-                    $("body").addClass("bg-kaya");
-                }else if($("body").hasClass("bg-judith") === true){
-                    $("body").removeClass("bg-judith");
-                    $("body").addClass("bg-kaya");
-
-                }else if($("body").hasClass("bg-nissa") === true){
-                    $("body").removeClass("bg-nissa");
-                    $("body").addClass("bg-kaya");
-
-                }else if($("body").hasClass("bg-liliana") === true){
-                    $("body").removeClass("bg-liliana");
-                    $("body").addClass("bg-kaya");
-
-                }
-            })
-            
-        })
-    </script>
+    <script src="scripts/contador-de-pontos.js"></script>
+    <script src="scripts/mana-e-temas.js"></script>
     
 </body>
 </html>
