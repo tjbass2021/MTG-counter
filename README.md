@@ -51,6 +51,10 @@ Graças a magia do FlexBox, o projeto é responsivo, mas ainda necessitando de a
 
 <img src="images/kaya-muda-tema.png">
 
+## Experimente a aplicação
+
+[Experimente a aplicação clicando aqui](https://tjbass2021.github.io/MTG-counter/)
+
 ---
 
 ## Considerações
